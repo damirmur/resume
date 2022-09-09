@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,68 +8,94 @@
     <meta name="description" content="Базовый курс по html">
     <meta name="keywords" content="html, css, course, tags">
     <title>HTML Course</title>
+    <link rel="stylesheet" href="resume.css">
 </head>
-<body>
-    <img src="imgs/avatar.jfif" width="200" alt="Муратов Дамир">
-    <h1>Муратов Дамир</h1>
-<p>Я работаю <strong>программистом.</strong>  Свое ИП. </p>
-<p>В основном программировал в <strong><em>1С:Предприятие 8.2</em></strong> </p>
-<br>
-<hr>
-<h2>Список социальных сетей</h2>
-<p><a href="https://ok.ru/profile/532767585137" target="_blank">OK</a>    <a href="https://vk.com/id34240560" target="_blank">VK</a></p>
-<br>
-<hr>
-<h2>Мои хобби</h2>
-<ul>
-    <li>Астрология</li>
-    <li>Психология</li>
-    <li>Блоггинг</li>
-    <li>Программирование</li>
-</ul>
-<h2>Опыт работы</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Военкомат</td>
-            <td>Инженер АСУ</td>
-            <td>1997-1998</td>
-        </tr>
-        <tr>
-            <td>Франчайзи 1С</td>
-            <td>Программист-внедренец</td>
-            <td>2003-2004</td>
-        </tr>
-    </tbody>
-</table>
-<hr>
-<h2>Связаться со мной</h2>
-<form>
-    <div>
-        <label for="nameuser">Ваше имя: </label>
-        <input type="text" id="nameuser" value=""
-        placeholder="Введите имя">
-        
-    </div>
-    <div>
-        <label for="email">Ваш email: </label>
-        <input type="email" id="email"
-        placeholder="Введите email">
-    </div>
-    <div>
-        <label for="message">Ваше сообщение:</label><br>
-        <textarea name="message" id="" cols="30" rows="5"
-        placeholder="Введите сообщение ..."></textarea>
-    </div>
-    <button type="submit">Отправить!</button>
-</form>
 
+<body>
+    <div class="container">
+        <div>
+            <div class="info">
+
+                <img src="imgs/avatar.jfif" alt="Муратов Дамир" class="avatar">
+                <div class="info-text">
+                    <h1>Муратов Дамир</h1>
+                    <p>Я работаю <strong>программистом.</strong> Свое ИП. </p>
+                    <p>В основном программировал в <strong><em>1С:Предприятие 8.2</em></strong> </p>
+                    <br>
+                    <hr>
+                    <h2>Список социальных сетей</h2>
+                    <p><a href="https://ok.ru/profile/532767585137" target="_blank">OK</a>
+                        <a href="https://vk.com/id34240560" target="_blank">VK</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Астрология</li>
+                <li>Психология</li>
+                <li>Блоггинг</li>
+                <li>Программирование</li>
+            </ol>
+        </div>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Военкомат</td>
+                        <td>Инженер АСУ</td>
+                        <td>1997-1998</td>
+                    </tr>
+                    <tr>
+                        <td>Франчайзи 1С</td>
+                        <td>Программист-внедренец</td>
+                        <td>2003-2004</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card bg-yellow">
+            <h2>Мои курсы</h2>
+            <ul class="link-list">
+                <li>
+                    Получение профессии Frontend разработчика.
+                </li>
+                <li>
+                    Все курсы.
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="card">
+            <form class="form">
+                <h2>Связаться со мной</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nameuser">Ваше имя: </label>
+                        <input type="text" id="nameuser" value="" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email: </label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea name="message" id="" cols="30" rows="5" placeholder="Введите сообщение ..."></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить!</button>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
