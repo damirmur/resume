@@ -1,3 +1,3 @@
 # resume
 ## Результат можно посмотреть здесь
-[Моя первая работа на HTML & CSS](https://damirmur.github.io/resume/)
+[Моя работа на HTML & CSS](https://damirmur.github.io/resume/)
